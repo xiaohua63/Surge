@@ -10,7 +10,7 @@
 # 
 
 
-[Rewrite]
+[URL Rewrite]
 # 主页内广告
 ^https:\/\/router-app-api\.jdcloud\.com\/v1\/regions\/cn-north-1\/unifierQuery - reject
 ^https:\/\/router-app-api\.jdcloud\.com\/v1\/regions\/cn-north-1\/bannerHorseRaceLamp - reject
