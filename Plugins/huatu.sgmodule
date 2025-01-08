@@ -1,0 +1,33 @@
+#!name = 华图去广告
+#!desc = 移除广告。
+#!author = 小花🅥[https://github.com/xiaohua63/Loon/main/README.md]
+#!tag = 去广告
+#!icon = https://raw.githubusercontent.com/xiaohua63/Loon/main/Icons/app/huatu.png
+#!date = 2024-11-19 17:20
+#!category=小花
+
+[Rule]
+# 拦截HTTPDNS
+
+
+[URL Rewrite]
+# 开屏广告
+^https:\/\/ns\.huatu\.com\/u\/v5\/users\/bc\/launch\ - reject
+# 我的主页广告
+^https:\/\/ns\.huatu\.com\/u\/v5\/users\/bc\/myOperation\ - reject
+# 主页中间小条广告
+^https:\/\/ns\.huatu\.com\/u\/v6\/users\/bc\/homeOperation\ - reject
+# 主页最上边大图广告
+^https:\/\/ns\.huatu\.com\/u\/v5\/users\/bc\/list\ - reject
+# 主页模考大赛图片
+^https:\/\/ns\.huatu\.com\/u\/v6\/users\/bc\/homeOperation - reject
+# 主页视频弹窗
+^https:\/\/ocfapi\.huatu\.com\/api\/user\/get_online_app_red_dot - reject
+# 打开出现的图片
+^https:\/\/ns\.huatu\.com\/u\/v5\/users\/bc\/popup - reject
+^https:\/\/yyfapi\.huatu\.com\/common\/ad\/resource\/home - reject
+
+
+
+[MITM]
+hostname = %APPEND% ns.huatu.com,ocfapi.huatu.com,yyfapi.huatu.com
