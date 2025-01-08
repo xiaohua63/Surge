@@ -17,4 +17,4 @@
 ^https:\/\/router-app-api\.jdcloud\.com\/v1\/regions\/cn-north-1\/queryConfig - reject
 
 [mitm] 
-hostname = router-app-api.jdcloud.com，router-app-api.jdcloud.com
+hostname = %APPEND% router-app-api.jdcloud.com，router-app-api.jdcloud.com
