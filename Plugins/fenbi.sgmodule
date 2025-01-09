@@ -1,0 +1,30 @@
+#!name = 粉笔去除广告
+#!desc = 移除开屏广告。
+#!author = 小花🅥[https://github.com/xiaohua63/loon/main/README.md]
+#!tag = 去广告
+#!icon = https://raw.githubusercontent.com/xiaohua63/Loon/main/Icons/app/fenbi.png
+#!date = 2024-11-19 17:24
+#!category = 小花
+
+[Rule]
+#
+
+
+[URL Rewrite]
+# 粉笔微信咨询
+^https:\/\/market-api\.fenbi\.com\/iphone\/v1\/assistant\/my - reject
+# 粉笔会员中心
+^https:\/\/ke\.fenbi\.com\/iphone\/v3\/user_member\/entry - reject
+# 粉笔左下角广告手机上特训营类的
+^https:\/\/keapi\.fenbi\.com\/app\/iphone\/szyf\/small_banner - reject
+# 粉笔左下角广告平板上特训营类的
+^https:\/\/keapi\.fenbi\.com\/app\/ipad\/szyf\/small_banner - reject
+# 粉笔最上边大图片，注释掉了，使用会导致不美观
+#^https:\/\/tiku\.fenbi\.com\/iphone\/szyf\/banners\/v2 - reject
+# 粉笔左下角pdf
+^https:\/\/market-api\.fenbi\.com\/iphone\/v1\/assistant\/entrance\/show - reject
+# 打开提示直播进行中
+^https:\/\/ke\.fenbi\.com\/iphone\/v3\/remind\/instant - reject
+
+[MITM]
+hostname = %APPEND% ke.fenbi.com, tiku.fenbi.com, market-api.fenbi.com, keapi.fenbi.com
