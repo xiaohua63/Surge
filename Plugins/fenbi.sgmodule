@@ -23,8 +23,10 @@
 #^https:\/\/tiku\.fenbi\.com\/iphone\/szyf\/banners\/v2 - reject
 # 粉笔左下角pdf
 ^https:\/\/market-api\.fenbi\.com\/iphone\/v1\/assistant\/entrance\/show - reject
-# 打开提示直播进行中
+# 手机打开提示直播进行中
 ^https:\/\/ke\.fenbi\.com\/iphone\/v3\/remind\/instant - reject
+#ipad打开提示直播进行中
+^https:\/\/ke\.fenbi\.com\/ipad\/v3\/remind\/instant - reject
 
 [MITM]
 hostname = %APPEND% ke.fenbi.com, tiku.fenbi.com, market-api.fenbi.com, keapi.fenbi.com
