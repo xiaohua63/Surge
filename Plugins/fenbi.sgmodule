@@ -18,7 +18,7 @@
 ^https:\/\/ke\.fenbi\.com\/iphone\/v3\/user_member\/entry - reject
 ^https:\/\/ke\.fenbi\.com\/ipad\/v3\/user_member\/entry - reject
 # 粉笔左下角广告上特训营类的
-^https:\/\/keapi\.fenbi\.com\/app\/iphone\/szyf\/small_banner - rejec
+^https:\/\/keapi\.fenbi\.com\/app\/iphone\/szyf\/small_banner - reject
 ^https:\/\/keapi\.fenbi\.com\/app\/ipad\/szyf\/small_banner - reject
 # 粉笔最上边大图片，注释掉了，使用会导致不美观
 #^https:\/\/tiku\.fenbi\.com\/iphone\/szyf\/banners\/v2 - reject
