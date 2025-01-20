@@ -7,6 +7,7 @@
 #!category = 小花
 
 [URL Rewrite]
-^https:\/\/www\.tailgdd\.com\/v8\/smart\/app\/config\/get - reject
+^https:\/\/vt\.tailgdd\.com\/prod\/smart\/config - reject
+
 [MITM] 
-hostname = %APPEND% www.tailgdd.com
+hostname = %APPEND% vt.tailgdd.com
