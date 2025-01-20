@@ -1,0 +1,12 @@
+#!name = 台铃智能去广告
+#!desc = 移除开屏广告。
+#!author = 小花🅥[https://github.com/xiaohua63/quanxx/main/README.md]
+#!tag = 去广告
+#!icon = https://raw.githubusercontent.com/xiaohua63/surge/main/app_icon/tailing.png
+#!date = 2025-1-20 22:56:00
+#!category = 小花
+
+[URL Rewrite]
+^https:\/\/www\.tailgdd\.com\/v8\/smart\/app\/config\/get - reject
+[MITM] 
+hostname = %APPEND% www.tailgdd.com
