@@ -11,6 +11,8 @@
 ^https:\/\/vt\.tailgdd\.com\/prod\/smart\/config - reject
 # 开屏广告
 ^https:\/\/www\.tailgdd\.com\/v8\/smart\/app\/config\/get - reject
+# 圈子推荐轮播图
+^https:\/\/www\.tailgdd\.com\/v8\/social\/app\/banner\/list - reject
 
 [MITM] 
 hostname = %APPEND% vt.tailgdd.com,www.tailgdd.com
