@@ -44,5 +44,4 @@
 
 
 [MITM]
-hostname = %APPEND% ke.fenbi.com, tiku.fenbi.com, market-api.fenbi.com, keapi.fenbi.com
-, algo.fenbi.com
+hostname = %APPEND% ke.fenbi.com, tiku.fenbi.com, market-api.fenbi.com, keapi.fenbi.com, algo.fenbi.com
