@@ -38,6 +38,8 @@
 # 粉笔左下角广告手机上特训营类的
 ^https:\/\/keapi\.fenbi\.com\/app\/iphone\/sydw\/small_banner - reject
 ^https:\/\/keapi\.fenbi\.com\/app\/ipad\/sydw\/small_banner - reject
+^https:\/\/keapi\.fenbi\.com\/app\/iphone\/syzc\/small_banner - reject
+^https:\/\/keapi\.fenbi\.com\/app\/ipad\/syzc\/small_banner - reject
 # 做完题后练习报告中广告
 ^https:\/\/algo\.fenbi\.com\/iphone\/lectureRec - reject
 ^https:\/\/algo\.fenbi\.com\/ipad\/lectureRec - reject
